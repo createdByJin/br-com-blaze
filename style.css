@@ -103,7 +103,7 @@ body {
     cursor: pointer;
 }
 
-.container {
+.main-container {
     position: relative;
     /* top: 100px; */
     height: 100vh;
@@ -118,16 +118,16 @@ body {
     color: var(--white);
 }
 
-.container h1 {
+.main-container h1 {
     font-size: 48px;
     font-weight: bold;
 }
 
-.container h1 span {
+.main-container h1 span {
     display: block;
 }
 
-.content {
+.main-content {
     display: flex;
     justify-content: space-between;
 }
@@ -136,7 +136,7 @@ body {
     width: 50%;
 }
 
-.container p {
+.main-container p {
     width: 250px;
     font-size: 20px;
     margin-top: 50px;
@@ -150,7 +150,7 @@ body {
     width: 50%;
 }
 
-.container .canva-illustration img {
+.main-container .canva-illustration img {
     width: 300px;
 }
 
@@ -197,6 +197,7 @@ body {
     padding-right: 10px;
     padding-bottom: 8px;
     padding-left: 10px;
+    box-shadow: 5px 5px 18px var(--black);
     border-radius: 50%;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -211,9 +212,64 @@ body {
 }
 
 .newsletter {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
     height: 100vh;
     background-color: var(--white);
+    padding: 50px 150px 25px 150px;
+}
+
+.newsletter-description {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.newsletter-description h4 {
+    font-size: 24px;
+    font-weight: 700;
     color: var(--black);
+    padding: 0 50px;
+    margin: 16px 0 32px 0;
+}
+
+.newsletter-description p {
+    font-size: 18px;
+    color: var(--black);
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+.form-newsletter {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--nunito-sans);
+    padding: 50px 0 10px 0;
+    border-bottom: 2px solid var(--black);
+}
+
+.form-newsletter input[type=email] {
+    width: 100%;
+    font-size: 18px;
+    color: var(--black);
+    padding-right: 5px;
+    border: none;
+    outline: none;
+}
+
+.form-newsletter input[type=email]::placeholder {
+    opacity: 0.6;
+}
+
+.form-newsletter input[type=submit] {
+    font-size: 18px;
+    color: var(--black);
+    background-color: var(--white);
+    padding: 5px 10px;
+    border: none;
+    outline: none;
 }
 
 .footer-copy {
