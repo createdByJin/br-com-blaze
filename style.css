@@ -105,10 +105,13 @@ body {
 
 .container {
     position: relative;
-    top: 100px;
+    /* top: 100px; */
+    height: 100vh;
+    box-sizing: border-box;
     margin-left: 150px;
     margin-right: 150px;
-    padding-top: 50px;
+    padding-top: 150px;
+    /* padding-top: 50px; testing this size */
     padding-right: 25px;
     padding-bottom: 50px;
     padding-left: 25px;
@@ -151,6 +154,21 @@ body {
     width: 300px;
 }
 
+.services {
+    height: 100vh;
+    background-color: var(--mustard);
+}
+
+.projects {
+    height: 100vh;
+    background-color: var(--red);
+}
+
+.about {
+    height: 100vh;
+    background-color: var(--light-blue);
+}
+
 .social-media {
     position: fixed;
     bottom: 32px;
@@ -189,5 +207,17 @@ body {
 
 .links a:hover {
     background-color: var(--light-blue);
+    color: var(--white);
+}
+
+.newsletter {
+    height: 100vh;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.footer-copy {
+    height: 50vh;
+    background-color: var(--dark-blue);
     color: var(--white);
 }
